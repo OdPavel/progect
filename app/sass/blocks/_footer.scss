@@ -1,0 +1,16 @@
+.footer{
+    padding: 25px;
+    background-color: greenyellow;
+
+    .logo{
+        text-align: left;
+    }
+    &__menu{
+        display: flex;
+    }
+    &__menu li{
+        text-decoration: none;
+        list-style: none;
+        margin-right: 35px;
+    }
+}
