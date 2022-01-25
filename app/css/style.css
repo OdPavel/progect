@@ -48,6 +48,7 @@
 .main .cart__text {
   font-size: 25px;
   color: blue;
+<<<<<<< HEAD
 }
 
 .menu__list {
@@ -62,6 +63,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+=======
+>>>>>>> 47ffc3c37679141fc1fa39bb51d8e9e660bd6ac4
 }
 
 /*# sourceMappingURL=style.css.map */
