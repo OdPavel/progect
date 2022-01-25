@@ -18,8 +18,36 @@
   font-style: normal;
 }
 
-.title {
-  color: red;
+.main {
+  border-color: aqua;
+}
+
+.main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .inner {
+  width: 33.333%;
+  padding: 0 15px;
+}
+
+.main .cart {
+  border-color: azure;
+}
+
+.main .cart__title {
+  font-size: 55px;
+  font-weight: 57px;
+}
+
+.main .cart__text {
+  font-size: 25px;
+  color: blue;
 }
 
 .menu__list {

@@ -1,0 +1,23 @@
+.main {
+    border-color: aqua;
+    .wrapper {
+        display: flex;
+        margin: 0 15px;
+        flex-wrap: wrap;
+    }
+    .inner {
+        width: 33.333%;
+        padding: 0 15px;
+    }
+    .cart {
+        border-color: azure;
+        &__title {
+            font-size: 55px;
+            font-weight: 57px;
+        }
+        &__text {
+            font-size: 25px;
+            color: blue;
+        }
+    }
+}
