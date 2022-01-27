@@ -1,0 +1,23 @@
+.provider {
+    &__title {
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 125px;
+        margin-bottom: 158px;
+    }
+    &__parrent{
+        display: inline-flex;
+        margin-bottom: 30px;
+    }
+    &__arrow {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        margin: 0 auto;
+        background: url(../img/arrow.svg)no-repeat center;
+    }
+}

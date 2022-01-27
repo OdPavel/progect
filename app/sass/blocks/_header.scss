@@ -1,8 +1,10 @@
 .header {
     &__address,
-    &__fb {
+    &__fb,
+    &__list {
         display: none;
     }
+
     display: grid;
     grid-template-columns: 1fr min-content;
     grid-template-rows: auto auto;
@@ -15,73 +17,209 @@
         grid-area: top;
         display: flex;
         justify-content: space-between;
-        padding: 15px 30px 15px 30px;
+        padding: 12px 30px 13px 17px;
         margin: 0 -15px;
     }
+
     &__logo {
         grid-area: logobox;
-        padding: 15px 0 10px 15px;
+        padding: 15px 0 10px;
         position: relative;
         display: block;
-        
-        ::after{
-            position: absolute;
-            content: '';
-            background: url('..img/slash.svg');
-            width: 100%;
-            height: 100%;
-            top: 0;
-            right: 0;
-        }
     }
+
     &__menu {
         grid-area: menu;
-        position: relative;
-        width: 18px;
-        height: 20px;
-        display: block;
-
-        span{
-            position: absolute;
-            content: '';
-            width: 100%;
-            height: 2px;
-            background-color: #fff;
-            top: 30px;
-            right: 20px;
-        }
-        ::before{
-            position: absolute;
-            content: '';
-            width: 100%;
-            height: 3px;
-            background-color: #fff;
-            top: -6px;
-
-        }
-        ::after{
-            position: absolute;
-            content: '';
-            width: 100%;
-            height: 2px;
-            background-color: #fff;
-            top: 5px;
-        }
     }
+
     &__leng-link {
         font-size: 12px;
         line-height: 15px;
         letter-spacing: 1px;
         color: #ffffff;
-        // margin-right: 7px;
         padding: 5px 7px;
         background-color: transparent;
+        margin-right: -4px;
     }
+
     &__tel {
-        font-size: 16px;
         line-height: 20px;
         color: #ffffff;
-
+        margin-right: -15px;
     }
 
+    // ---------------------
+
+    &__burger {
+        display: block;
+        position: relative;
+        width: 18px;
+        height: 18px;
+
+        ::before,
+        ::after {
+            content: "";
+            position: absolute;
+            background-color: #fff;
+            width: 100%;
+            height: 2px;
+            left: 0;
+        }
+
+        ::before {
+            top: 6px;
+        }
+
+        ::after {
+            bottom: 6px;
+        }
+
+        span {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            left: -7px;
+            top: 27px;
+        }
+        :active {
+            background-color: #e6e6f0;
+        }
+    }
+
+    &__list li {
+        list-style: none;
+        margin-right: 15px;
+    }
+
+    &__list {
+        padding-left: 12px;
+    }
+
+    &__link {
+        line-height: 20px;
+        color: #ffffff;
+    }
+
+    // ------------------------------------
+
+    @media (min-width: 768px) {
+        padding-top: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "top "
+            "logobox"
+            "menu";
+
+        &__address,
+        &__fb {
+            display: block;
+        }
+
+        &__burger {
+            display: none;
+        }
+
+        &__list {
+            display: flex;
+            padding-left: 34px;
+        }
+
+        &__top {
+            justify-content: flex-start;
+            background: none;
+            padding: 12px 30px 11px 50px;
+        }
+
+        &__address {
+            font-weight: normal;
+            line-height: 20px;
+            color: #b3b3ba;
+            margin: 0 18px 0 23px;
+            position: relative;
+        }
+
+        &__address::before,
+        &__address::after {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background-color: #e6e6f0;
+            top: 7px;
+            border-radius: 50%;
+        }
+
+        &__address::before {
+            left: -11px;
+        }
+
+        &__address::after {
+            right: -11px;
+        }
+
+        &__tel {
+            margin-right: 18px;
+            position: relative;
+        }
+
+        &__tel::after {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background-color: #e6e6f0;
+            top: 7px;
+            right: -11px;
+            border-radius: 50%;
+        }
+
+        &__logo {
+            margin: 0 0 16px 35px;
+        }
+        &__logo-img {
+            width: 130px;
+            height: 60px;
+        }
+    }
+    @media (min-width: 992px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "logobox top"
+            "logobox menu";
+
+        &__top {
+            justify-content: flex-end;
+        }
+
+        &__list {
+            justify-content: flex-end;
+        }
+
+        &__logo {
+            align-self: center;
+        }
+
+        &__link {
+            border-bottom: 2px solid inherit;
+            padding-bottom: 3px;
+        }
+
+        &__link:hover {
+            border-bottom: 2px solid #fff;
+        }
+
+        &__fb {
+            :hover path {
+                fill: #f0145a;
+            }
+        }
+        &__leng-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+        }
+    }
 }
