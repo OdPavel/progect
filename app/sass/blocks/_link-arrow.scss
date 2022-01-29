@@ -1,0 +1,12 @@
+.link-arrow {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background: url("../img/slider-arrow.svg") no-repeat 4px 2px;
+        width: 15px;
+        height: 15px;
+    }
+}

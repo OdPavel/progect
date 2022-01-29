@@ -1,6 +1,7 @@
 .submenu {
     &__wrap {
         white-space: nowrap;
+        overflow: hidden;
         border-bottom: 4px solid rgba(255, 255, 255, 0.3);
         padding-bottom: 30px;
         margin-bottom: 34px;

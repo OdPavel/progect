@@ -1,0 +1,49 @@
+.slider {
+    &__wrap {
+        background: #f5f5fa;
+        margin-bottom: 30px;
+    }
+    &__img {
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 30px;
+        line-height: 37px;
+        color: #f0145a;
+        margin: 5px 0;
+    }
+    &__content {
+        padding: 30px;
+    }
+    &__name {
+        line-height: 20px;
+        color: #b3b3ba;
+        margin: 30px 0 6px;
+    }
+    &__profession {
+        font-size: 14px;
+        line-height: 22px;
+        color: #b3b3ba;
+    }
+    &__dots {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    &__list {
+        padding: 0 7px;
+    }
+    &__button {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        border: none;
+        border-radius: 50%;
+        background: #24a3ff;
+        opacity: 0.2;
+        font-size: 0;
+    }
+}

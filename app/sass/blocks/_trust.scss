@@ -1,0 +1,33 @@
+.trust {
+    &__text {
+        text-align: center;
+    }
+    &__cart {
+        height: 120px;
+    }
+    &__img {
+        display: block;
+        margin: auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__cart1 {
+        background: #1c4280;
+    }
+    &__cart2 {
+        background: #143646;
+    }
+    &__cart3 {
+        background: #fd9339;
+    }
+    &__cart4 {
+        background: #9e4dc3;
+    }
+    &__cart5 {
+        background: #fd9339;
+    }
+    &__cart6 {
+        background: #e2e2e4;
+    }
+}
