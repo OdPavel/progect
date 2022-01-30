@@ -8,23 +8,24 @@
     }
 
     &__title {
-        font-size: 30px;
-        line-height: 37px;
-        color: #f0145a;
         margin: 5px 0;
+        letter-spacing: 2px;
     }
     &__content {
-        padding: 30px;
+        padding: 22px 30px;
     }
     &__name {
         line-height: 20px;
+        letter-spacing: 1px;
         color: #b3b3ba;
-        margin: 30px 0 6px;
+        margin: 30px 0 4px;
+        max-width: 240px;
     }
     &__profession {
         font-size: 14px;
         line-height: 22px;
         color: #b3b3ba;
+        letter-spacing: 0.7px;
     }
     &__dots {
         padding: 0;
@@ -45,5 +46,24 @@
         background: #24a3ff;
         opacity: 0.2;
         font-size: 0;
+    }
+    @media (min-width: 768px) {
+        padding: 30px 41px 30px 18px;
+        &__wrap {
+            margin-bottom: 25px;
+        }
+        &__title {
+            max-width: 588px;
+        }
+        &__name {
+            margin: 6px 0;
+            max-width: 280px;
+        }
+        &__content {
+            padding-bottom: 29px;
+        }
+        &__dots {
+            margin-bottom: 28px;
+        }
     }
 }

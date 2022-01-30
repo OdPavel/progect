@@ -1,0 +1,9 @@
+.title {
+    font-size: 30px;
+    line-height: 37px;
+    color: #f0145a;
+    @media (min-width: 768px) {
+        font-size: 38px;
+        line-height: 46px;
+    }
+}

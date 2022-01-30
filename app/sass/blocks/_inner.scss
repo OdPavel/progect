@@ -1,4 +1,9 @@
-.inner{
-    background: url('../img/header-h.svg')top center no-repeat;
-    
+.inner {
+    background: url("../img/header-h1.svg") top center no-repeat;
+    @media (min-width: 768px) {
+        background: url("../img/header-h2.svg") -12px 0 no-repeat;
+    }
+    @media (min-width: 992px) {
+        background: url("../img/header-h3.svg") top center no-repeat;
+    }
 }

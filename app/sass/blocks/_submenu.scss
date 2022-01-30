@@ -1,10 +1,10 @@
 .submenu {
     &__wrap {
         white-space: nowrap;
-        overflow: hidden;
+        overflow: auto;
         border-bottom: 4px solid rgba(255, 255, 255, 0.3);
-        padding-bottom: 30px;
-        margin-bottom: 34px;
+        padding-bottom: 28px;
+        margin-bottom: 30px;
     }
 
     &__link {
@@ -12,7 +12,16 @@
         line-height: 37px;
         color: #b3b3ba;
         margin-right: 30px;
+        background: transparent;
+        border: none;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
     }
+
     &__title {
         font-size: 20px;
         line-height: 24px;
@@ -25,5 +34,27 @@
         color: #ffffff;
         font-weight: 400;
         padding-bottom: 30px;
+    }
+    @media (min-width: 768px) {
+        padding-left: 18px;
+        &__wrap {
+            padding-bottom: 56px;
+            margin-bottom: 61px;
+        }
+        &__link {
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+            letter-spacing: 1px;
+            margin-right: 19px;
+        }
+        &__title {
+            font-size: 30px;
+            line-height: 37px;
+        }
+        &__text {
+            max-width: 650px;
+            margin-bottom: 29px;
+        }
     }
 }

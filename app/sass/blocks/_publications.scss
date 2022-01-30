@@ -1,0 +1,74 @@
+.publications {
+    background: #f5f5fa;
+    padding: 29px 0;
+    &__wrap {
+        position: relative;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 30px;
+        right: 30px;
+        height: 2px;
+        background: #e6e6f0;
+    }
+    &__inner {
+        margin-bottom: 30px;
+    }
+    &__cart {
+        background: #fff;
+    }
+    &__content {
+        padding: 30px;
+    }
+    &__title {
+        margin: 5px 0 30px;
+    }
+    &__img {
+        border-radius: 8px 8px 0px 0px;
+        width: 100%;
+    }
+    &__subtitle {
+        display: inline-block;
+        line-height: 20px;
+        color: #24a3ff;
+        margin-bottom: 15px;
+    }
+    &__date {
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #b3b3ba;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 4px solid #e6e6f0;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #000000;
+    }
+    @media (min-width: 768px) {
+        padding: 29px 41px 29px 18px;
+        &__title {
+            margin-top: 10px;
+        }
+        &__wrap2 {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+        &__inner2 {
+            width: 50%;
+            padding: 0 15px;
+        }
+        &__cart {
+            height: 100%;
+        }
+        &__subtitle {
+            margin-bottom: 13px;
+        }
+    }
+}
