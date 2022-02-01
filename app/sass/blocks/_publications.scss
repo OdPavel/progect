@@ -71,4 +71,16 @@
             margin-bottom: 13px;
         }
     }
+    @media (min-width: 1024px) {
+        &__wrap2 {
+            display: contents;
+        }
+        &__wrap {
+            display: flex;
+        }
+        &__inner {
+            width: 33.333%;
+            padding: 0 15px;
+        }
+    }
 }

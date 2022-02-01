@@ -66,4 +66,17 @@
             margin-bottom: 28px;
         }
     }
+    @media (min-width: 1024px) {
+        &__inner {
+            display: flex;
+        }
+        &__content {
+            padding: 29px 30px 0 30px;
+        }
+    }
+    @media (min-width: 1440px) {
+        &__title {
+            max-width: 845px;
+        }
+    }
 }

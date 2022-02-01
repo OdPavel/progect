@@ -83,7 +83,7 @@ a {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .inner {
     background: url("../img/header-h3.svg") top center no-repeat;
   }
@@ -260,7 +260,7 @@ a {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .header {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -405,6 +405,40 @@ a {
   }
 }
 
+@media (min-width: 1024px) {
+  .submenu__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .submenu__wrap {
+    white-space: normal;
+    overflow: visible;
+    border-right: 4px solid rgba(255, 255, 255, 0.3);
+    border-bottom: none;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-right: 40px;
+    padding-bottom: 0;
+  }
+  .submenu__content {
+    width: 50%;
+    padding-left: 60px;
+  }
+  .submenu__link {
+    margin-bottom: 30px;
+  }
+}
+
 .active-link {
   color: #f0145a;
 }
@@ -523,6 +557,18 @@ a {
   }
 }
 
+@media (min-width: 1024px) {
+  .services__inner {
+    width: 33.333%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .services__cart {
+    max-width: 385px;
+  }
+}
+
 .slider__wrap {
   background: #f5f5fa;
   margin-bottom: 30px;
@@ -602,6 +648,23 @@ a {
   }
   .slider__dots {
     margin-bottom: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .slider__content {
+    padding: 29px 30px 0 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .slider__title {
+    max-width: 845px;
   }
 }
 
@@ -829,6 +892,21 @@ a {
   }
 }
 
+@media (min-width: 1024px) {
+  .publications__wrap2 {
+    display: contents;
+  }
+  .publications__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .publications__inner {
+    width: 33.333%;
+    padding: 0 15px;
+  }
+}
+
 .footer {
   background: #f5f5fa;
   padding: 2px 0;
@@ -879,6 +957,10 @@ a {
   font-weight: 400;
   line-height: 20px;
   color: #b3b3ba;
+}
+
+.about .header {
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */

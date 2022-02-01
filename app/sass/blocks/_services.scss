@@ -104,4 +104,14 @@
             max-width: 295px;
         }
     }
+    @media (min-width: 1024px) {
+        &__inner {
+            width: 33.333%;
+        }
+    }
+    @media (min-width: 1440px) {
+        &__cart {
+            max-width: 385px;
+        }
+    }
 }
