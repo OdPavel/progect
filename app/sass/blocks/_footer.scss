@@ -19,6 +19,10 @@
     }
     &__fb {
         margin-bottom: 8px;
+
+        :hover path {
+            fill: #f0145a;
+        }
     }
     &__tel {
         color: #46466e;
@@ -28,12 +32,34 @@
         line-height: 20px;
         color: #24a3ff;
         margin-bottom: 29px;
+        transition-duration: 0.5s;
+        &:hover {
+            color: #f0145a;
+        }
     }
     &__copi {
         font-weight: 400;
         line-height: 20px;
         color: #b3b3ba;
     }
-    @media (min-width: 768px) {
-    }
+    // @media (min-width: 768px) {
+    //     &__content {
+    //         display: grid;
+    //         grid-template-columns: 1fr 1fr;
+    //         grid-template-rows: auto auto;
+    //         grid-template-areas:
+    //             "address copy"
+    //             "phone";
+    //         &__fierst {
+    //             grid-area: address;
+    //             display: flex;
+    //         }
+    //         &__copi {
+    //             grid-area: copy;
+    //         }
+    //         &__second {
+    //             grid-area: phone;
+    //         }
+    //     }
+    // }
 }

@@ -36,7 +36,7 @@
         font-size: 12px;
         line-height: 15px;
         letter-spacing: 1px;
-        color: #ffffff;
+        color: #fff;
         padding: 5px 7px;
         background-color: transparent;
         margin-right: -4px;
@@ -97,7 +97,7 @@
 
     &__link {
         line-height: 20px;
-        color: #ffffff;
+        color: #fff;
     }
 
     // ------------------------------------
@@ -215,6 +215,25 @@
         &__leng-link:hover {
             background: rgba(255, 255, 255, 0.2);
             border-radius: 8px;
+        }
+    }
+
+    &.about {
+        &__leng-link {
+            color: #b3b3ba;
+        }
+
+        &__tel {
+            color: #000;
+        }
+        @media (min-width: 768px) {
+            &__link {
+                color: #000;
+            }
+            // &__logo-img {
+            //     width: 130px;
+            //     height: 60px;
+            // }
         }
     }
 }

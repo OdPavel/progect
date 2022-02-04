@@ -12,12 +12,20 @@
         display: flex;
     }
     &__arrow {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 42px;
         height: 42px;
         border: 2px solid #fff;
         border-radius: 50%;
         margin: 0 auto;
-        background: url(../img/arrow.svg) no-repeat center;
+        transition-duration: 0.5s;
+        &:hover path {
+            stroke: #f0145a;
+        }
+        &:hover {
+            border-color: #f0145a;
+        }
     }
 }
