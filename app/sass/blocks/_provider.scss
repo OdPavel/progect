@@ -4,7 +4,7 @@
         font-size: 38px;
         line-height: 46px;
         text-align: center;
-        color: #ffffff;
+        color: $white;
         margin-top: 274px;
         margin-bottom: 417px;
     }
@@ -17,15 +17,15 @@
         align-items: center;
         width: 42px;
         height: 42px;
-        border: 2px solid #fff;
+        border: 2px solid $white;
         border-radius: 50%;
         margin: 0 auto;
         transition-duration: 0.5s;
         &:hover path {
-            stroke: #f0145a;
+            stroke: $red;
         }
         &:hover {
-            border-color: #f0145a;
+            border-color: $red;
         }
     }
 }

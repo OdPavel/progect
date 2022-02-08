@@ -1,5 +1,5 @@
 .publications {
-    background: #f5f5fa;
+    background: $ww;
     padding: 29px 0;
     &__wrap {
         position: relative;
@@ -10,13 +10,13 @@
         left: 30px;
         right: 30px;
         height: 2px;
-        background: #e6e6f0;
+        background: $wg;
     }
     &__inner {
         margin-bottom: 30px;
     }
     &__cart {
-        background: #fff;
+        background: $white;
         border-radius: 8px;
     }
     &__content {
@@ -34,7 +34,7 @@
     &__subtitle {
         display: inline-block;
         line-height: 20px;
-        color: #24a3ff;
+        color: $blue;
         margin-bottom: 15px;
     }
     &__date {
@@ -42,16 +42,16 @@
         line-height: 15px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #b3b3ba;
+        color: $grey;
         margin-bottom: 15px;
         padding-bottom: 15px;
-        border-bottom: 4px solid #e6e6f0;
+        border-bottom: 4px solid $wg;
     }
     &__text {
         font-weight: 400;
         font-size: 14px;
         line-height: 22px;
-        color: #000000;
+        color: $black;
     }
     @media (min-width: 768px) {
         padding: 29px 41px 29px 18px;

@@ -1,0 +1,32 @@
+.quality {
+    margin: 30px 0;
+    &__text {
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 30px;
+        color: $black;
+    }
+    &__paragraph {
+        margin-bottom: 10px;
+    }
+    &__title {
+        margin-bottom: 60px;
+    }
+    @media (min-width: 768px) {
+        margin-top: 60px;
+    }
+    @media (min-width: 991px) {
+        margin-top: 60px;
+        &__wrapper {
+            display: flex;
+        }
+
+        &__text {
+            width: 60%;
+            margin-right: 60px;
+        }
+        &__title {
+            width: 40%;
+        }
+    }
+}

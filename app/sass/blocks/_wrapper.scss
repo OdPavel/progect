@@ -11,7 +11,7 @@
         position: absolute;
         left: 20px;
         bottom: -10px;
-        background-color: #cacadb;
+        background-color: $wrap1;
     }
 
     &::before {
@@ -22,6 +22,6 @@
         position: absolute;
         left: 40px;
         bottom: -20px;
-        background-color: #e7e7f2;
+        background-color: $wrap2;
     }
 }

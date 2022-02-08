@@ -1,0 +1,30 @@
+.about-slider {
+    background: #f5f5fa;
+    &__title {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #323264;
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__box {
+        width: 255px;
+        height: 90px;
+        background: #fff;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px;
+    }
+    &__box-none {
+        display: none;
+    }
+    &__dots {
+        padding-bottom: 30px;
+    }
+}

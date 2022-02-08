@@ -1,6 +1,6 @@
 .slider {
     &__wrap {
-        background: #f5f5fa;
+        background: $ww;
         margin-bottom: 30px;
     }
     &__img {
@@ -20,14 +20,14 @@
     &__name {
         line-height: 20px;
         letter-spacing: 1px;
-        color: #b3b3ba;
+        color: $grey;
         margin: 30px 0 4px;
         max-width: 240px;
     }
     &__profession {
         font-size: 14px;
         line-height: 22px;
-        color: #b3b3ba;
+        color: $grey;
         letter-spacing: 0.7px;
     }
     &__dots {
@@ -35,7 +35,6 @@
         list-style: none;
         display: flex;
         justify-content: center;
-        margin-bottom: 60px;
     }
     &__list {
         padding: 0 7px;
@@ -46,7 +45,7 @@
         height: 16px;
         border: none;
         border-radius: 50%;
-        background: #24a3ff;
+        background: $blue;
         opacity: 0.2;
         font-size: 0;
     }
@@ -66,7 +65,7 @@
             padding-bottom: 29px;
         }
         &__dots {
-            margin-bottom: 28px;
+            // margin-bottom: 28px;
         }
     }
     @media (min-width: 1024px) {
