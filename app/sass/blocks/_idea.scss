@@ -1,12 +1,12 @@
 .idea {
     &__content {
-        margin: 30px 0;
+        margin: 25px 0 24px 15px;
     }
     &__title {
         margin-bottom: 28px;
     }
     &__text1 {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     &__text1,
     &__text2 {
@@ -17,18 +17,17 @@
     }
     &__inner {
         border-left: 4px solid #e6e6f0;
-        padding-left: 30px;
+        padding-left: 49px;
     }
     &__stat {
-        margin-bottom: 40px;
+        margin-bottom: 39px;
     }
     &__numb {
         font-size: 36px;
         line-height: 44px;
         color: $red;
-        margin-bottom: 10px;
-        padding-left: 40px;
-        background: url("../img/idea1.svg") no-repeat left 9px;
+        margin-bottom: 9px;
+        padding-left: 38px;
     }
     &__description {
         font-size: 16px;
@@ -37,13 +36,13 @@
         font-weight: 400;
     }
     &__numb1 {
-        background: url("../img/idea1.svg") no-repeat left 9px;
+        background: url("../img/idea1.svg") no-repeat left 7px;
     }
     &__numb2 {
-        background: url("../img/idea2.svg") no-repeat left 9px;
+        background: url("../img/idea2.svg") no-repeat left 12px;
     }
     &__numb3 {
-        background: url("../img/idea3.svg") no-repeat left 9px;
+        background: url("../img/idea3.svg") no-repeat left 12px;
     }
     @media (min-width: 991px) {
         margin-bottom: 60px;

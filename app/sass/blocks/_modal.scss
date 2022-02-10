@@ -1,0 +1,99 @@
+.modal {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    top: -1000px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(50, 50, 100, 0.7);
+    overflow-y: scroll;
+    &__active {
+        position: fixed;
+        top: 0;
+        visibility: visible;
+        opacity: 1;
+        transition: 0.3s;
+    }
+    &__content {
+        width: 100%;
+        max-width: 650px;
+        padding: 30px;
+        background: $modal-background;
+        border-radius: 3px;
+        position: relative;
+        box-shadow: 0 5px 15px $black;
+    }
+    &__close-button {
+        background: $red;
+        height: 100px;
+        width: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: none;
+        cursor: pointer;
+        transition: 0.3s;
+        outline: none;
+        &:hover {
+            transition: 0.3s;
+            transform: rotate(180deg);
+        }
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__input {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid $white;
+        border-radius: 8px;
+        &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $grey;
+        }
+    }
+    &__input-name,
+    &__input-tel {
+        margin-bottom: 15px;
+    }
+
+    &__message,
+    &__input-email {
+        margin-bottom: 30px;
+    }
+    &__message {
+        resize: none;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $grey;
+        margin-bottom: 15px;
+    }
+    &__button {
+        font-size: 16px;
+        line-height: 20px;
+        color: $white;
+        width: 100%;
+        padding: 18px;
+        background: $blue;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        border-radius: 12px;
+        border-color: $blue;
+    }
+}

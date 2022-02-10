@@ -10,8 +10,8 @@
 </head>
 
 <body class="body">
-    <header class="header about container">
-        <div class="">
+    <div class="container">
+        <header class="header about">
             <div class="header__top">
                 <div class="header__leng">
                     <a href="#" class="header__leng-link">УК</a>
@@ -24,13 +24,17 @@
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
-                            fill="white" />
+                            fill="#b3b3ba" />
                     </svg>
                 </a>
             </div>
-            <a href="index.html" class="header__logo">
-                <img src="img/logo-white-big.svg" width="70" height="33" alt="" class="header__logo-img">
-            </a>
+            <div class="header__box">
+                <a href="index.html" class="header__logo">
+                    <img src="img/logo-white-big.svg" width="70" height="33" alt="" class="header__logo-img">
+                </a>
+                <span class="header__logo-text">about us</span>
+            </div>
+
             <nav class="header__menu">
                 <div class="header__burger">
                     <span></span>
@@ -41,7 +45,7 @@
                         <a href="about.html" class="header__link">about us</a>
                     </li>
                     <li>
-                        <a href="#" class="header__link">services</a>
+                        <a href="services.html" class="header__link">services</a>
                     </li>
                     <li>
                         <a href="#" class="header__link">team</a>
@@ -54,8 +58,9 @@
                     </li>
                 </ul>
             </nav>
-        </div>
-    </header>
+
+        </header>
+    </div>
     <main>
         <section class="idea">
             <div class="container">
@@ -129,16 +134,16 @@
                 <div class="about-slider__wrap">
                     <div class="about-slider__inner">
                         <div class="about-slider__box">
-                            <img src="img/about-slider1.jpg" alt="" class="about-slider__img">
+                            <img src="img/about-slider1.jpg" alt="" class="about-slider__img about-slider__img1">
                         </div>
                         <div class="about-slider__box about-slider__box-none">
-                            <img src="img/about-slider2.jpg" alt="" class="about-slider__img">
+                            <img src="img/about-slider2.jpg" alt="" class="about-slider__img about-slider__img2">
                         </div>
                         <div class="about-slider__box about-slider__box-none">
-                            <img src="img/about-slider3.jpg" alt="" class="about-slider__img">
+                            <img src="img/about-slider3.jpg" alt="" class="about-slider__img about-slider__img3">
                         </div>
                         <div class="about-slider__box about-slider__box-none">
-                            <img src="img/about-slider4.jpg" alt="" class="about-slider__img">
+                            <img src="img/about-slider4.jpg" alt="" class="about-slider__img about-slider__img4">
                         </div>
                     </div>
                     <ul class="about-slider__dots slider__dots">
@@ -163,22 +168,37 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
-                <div class="footer__top">
+                <div class="footer__content1">
+                    <div class="footer__top">
+                        <p class="footer__address address footer__">
+                            Kyiv, Mechnikova str., 14/1
+                        </p>
+                        <div class="footer__map">
+                            <a href="#">On map</a>
+                        </div>
 
+                    </div>
+                    <div class="footer__bottom">
+                        <a class="footer__fb" href="#">
+                            <svg width="39" height="38" viewBox="0 0 39 38" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"
+                                    fill="#24A3FF" />
+                            </svg>
+                        </a>
+                        <div class="footer__tel tel">
+                            <a href="tel:+380800211927">0800 211 927</a>
+
+                        </div>
+                        <div class="footer__email">
+                            <a href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+
+                        </div>
+                    </div>
                 </div>
-                <p class="footer__address address">
-                    Kyiv, Mechnikova str., 14/1
-                </p>
-                <a class="footer__map" href="#">On map</a>
-                <a class="footer__fb" href="#">
-                    <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"
-                            fill="#24A3FF" />
-                    </svg>
-                </a>
-                <a class="footer__tel tel" href="tel:+380800211927">0800 211 927</a>
-                <a class="footer__email" href="email:contact@forstudy.space">contact@forstudy.space</a>
+
+
                 <p class="footer__copi">© 2021 HLEGAL Law company, LLC</p>
             </div>
 

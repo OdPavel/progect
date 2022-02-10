@@ -45,6 +45,7 @@
             background-color: $white;
             top: 28px;
             left: 0px;
+
             background-repeat: no-repeat;
             background-position: center center;
         }
@@ -79,9 +80,9 @@
             background-image: url("../img/services-6.svg");
         }
     }
-    &__cart:last-child {
-        padding-bottom: 30px;
-    }
+    // &__cart:last-child {
+    //     padding-bottom: 30px;
+    // }
     @media (min-width: 768px) {
         padding-left: 20px;
         padding-bottom: 29px;
@@ -97,11 +98,8 @@
             flex-wrap: wrap;
         }
         &__inner {
-            // width: 50%;
+            width: 50%;
             padding: 0 30px;
-        }
-        &__cart {
-            max-width: 295px;
         }
     }
     @media (min-width: 1024px) {
@@ -112,6 +110,81 @@
     @media (min-width: 1440px) {
         &__cart {
             max-width: 385px;
+        }
+    }
+}
+.service .services {
+    &__text1,
+    &__text2 {
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 28px;
+        color: $white;
+    }
+    &__button {
+        font-size: 16px;
+        line-height: 20px;
+        color: $white;
+        display: block;
+        margin: 0 auto;
+        padding: 18px 20px;
+        background: #24a3ff;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        border-radius: 12px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    &__subtitle {
+        font-size: 22px;
+        line-height: 27px;
+        color: $white;
+        margin-bottom: 30px;
+    }
+    &__list1 {
+        padding-left: 15px;
+        color: $red;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        padding-bottom: 30px;
+    }
+    &__item {
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        color: $white;
+    }
+    &__inner {
+        border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    &__cart {
+        max-width: none;
+        span {
+            top: 28px;
+            left: auto;
+            transform: translateX(-50%);
+        }
+    }
+    @media (min-width: 768px) {
+        &__list {
+            display: flex;
+            margin: 0 -30px;
+        }
+        &__list1 {
+            width: 50%;
+            padding: 0 30px;
+        }
+        &__list {
+            padding-bottom: 0;
+        }
+        &__cart {
+            margin-bottom: 60px;
         }
     }
 }
