@@ -102,12 +102,12 @@
             padding: 0 30px;
         }
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 991px) {
         &__inner {
             width: 33.333%;
         }
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1320px) {
         &__cart {
             max-width: 385px;
         }
