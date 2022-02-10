@@ -609,7 +609,7 @@ a {
   background-image: url("../img/services-arrow.svg");
   background-position: 4px 3px;
   background-repeat: no-repeat;
-  width: 18px;
+  width: 26px;
   height: 18px;
 }
 
@@ -1266,6 +1266,9 @@ a {
   }
   .footer__bottom {
     margin-bottom: 30px;
+  }
+  .footer__email {
+    margin-bottom: 0;
   }
 }
 

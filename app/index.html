@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
 
@@ -22,7 +25,7 @@
                         </div>
                         <div class="header__address address">Kyiv, Mechnikova str., 14/1</div>
                         <a class="header__tel tel" href="tel:+380800211927">0800 211 927</a>
-                        <a href="#" class="header__fb fb">
+                        <a href="#" class="header__fb fb" aria-label="ссылка на фейсбук">
                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -218,9 +221,12 @@
 
                 </div>
                 <ul class="slider__dots">
-                    <li class="slider__list"><button type="button" class="slider__button active-button">1</button></li>
-                    <li class="slider__list"><button type="button" class="slider__button">2</button></li>
-                    <li class="slider__list"><button type="button" class="slider__button">3</button></li>
+                    <li class="slider__list"><button type="button" class="slider__button active-button"
+                            aria-label="перемотка слайда">1</button></li>
+                    <li class="slider__list"><button type="button" class="slider__button"
+                            aria-label="перемотка слайда">2</button></li>
+                    <li class="slider__list"><button type="button" class="slider__button"
+                            aria-label="перемотка слайда">3</button></li>
                 </ul>
             </div>
         </section>
@@ -379,7 +385,7 @@
 
                     </div>
                     <div class="footer__bottom">
-                        <a class="footer__fb" href="#">
+                        <a class="footer__fb" href="#" aria-label="ссылка на фейсбук">
                             <svg width="39" height="38" viewBox="0 0 39 38" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path

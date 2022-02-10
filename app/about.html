@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
     <title>About</title>
 </head>
 
@@ -20,7 +23,7 @@
                 </div>
                 <div class="header__address address">Kyiv, Mechnikova str., 14/1</div>
                 <a class="header__tel tel" href="tel:+380800211927">0800 211 927</a>
-                <a href="#" class="header__fb fb">
+                <a href="#" class="header__fb fb" aria-label="ссылка на фейсбук">
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
@@ -147,21 +150,25 @@
                         </div>
                     </div>
                     <ul class="about-slider__dots slider__dots">
-                        <li class="slider__list"><button type="button" class="slider__button active-button">1</button>
+                        <li class="slider__list"><button type="button" class="slider__button active-button"
+                                aria-label="перемотка слайда">1</button>
                         </li>
-                        <li class="slider__list"><button type="button" class="slider__button">2</button></li>
-                        <li class="slider__list"><button type="button" class="slider__button">3</button></li>
-                        <li class="slider__list"><button type="button"
-                                class="slider__button slider__button-none">4</button>
+                        <li class="slider__list"><button type="button" class="slider__button"
+                                aria-label="перемотка слайда">2</button></li>
+                        <li class="slider__list"><button type="button" class="slider__button"
+                                aria-label="перемотка слайда">3</button></li>
+                        <li class="slider__list"><button type="button" class="slider__button slider__button-none"
+                                aria-label="перемотка слайда">4</button>
                         </li>
-                        <li class="slider__list"><button type="button"
-                                class="slider__button slider__button-none">5</button>
+                        <li class="slider__list"><button type="button" class="slider__button slider__button-none"
+                                aria-label="перемотка слайда">5</button>
                         </li>
-                        <li class="slider__list"><button type="button"
-                                class="slider__button slider__button-none">6</button>
+                        <li class="slider__list"><button type="button" class="slider__button slider__button-none"
+                                aria-label="перемотка слайда">6</button>
                         </li>
                     </ul>
                 </div>
+            </div>
         </section>
     </main>
 
@@ -179,7 +186,7 @@
 
                     </div>
                     <div class="footer__bottom">
-                        <a class="footer__fb" href="#">
+                        <a class="footer__fb" href="#" aria-label="ссылка на фейсбук">
                             <svg width="39" height="38" viewBox="0 0 39 38" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
